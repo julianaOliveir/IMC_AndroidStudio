@@ -11,4 +11,14 @@
     <string name="login_esqueci_a_senha">Esqueci a senha</string>
     <string name="login_nao_tem_conta">Não tem uma conta?</string>
     <string name="login_criar_uma_conta">Criar uma conta agora</string>
+
+    <string name="dashboard_imc">IMC</string>
+    <string name="dashboard_ndc">NDC</string>
+    <string name="dashboard_idade">Idade</string>
+    <string name="dashboard_peso">peso</string>
+    <string name="dashboard_altura">Altura</string>
+    <string name="dashboard_pesar_agora">Pesar agora</string>
+    <string name="dashboard_acompanhe_seu_peso">Acompanhe seu peso</string>
+    <string name="dashboard_ver_historico">Ver histórico</string>
+    <string name="dashboard_reveja_conquistas">Reveja suas conquistas</string>
 </resources>
