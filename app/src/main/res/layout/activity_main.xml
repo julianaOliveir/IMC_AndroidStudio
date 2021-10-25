@@ -136,6 +136,7 @@
                     android:text="@string/login_nao_tem_conta"/>
 
                 <Button
+                    android:id="@+id/nova_conta"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/login_criar_uma_conta"

@@ -12,6 +12,7 @@
     <string name="login_nao_tem_conta">Não tem uma conta?</string>
     <string name="login_criar_uma_conta">Criar uma conta agora</string>
 
+    <string name="dashboard_singer">Singer</string>
     <string name="dashboard_imc">IMC</string>
     <string name="dashboard_ndc">NDC</string>
     <string name="dashboard_idade">Idade</string>
@@ -21,4 +22,17 @@
     <string name="dashboard_acompanhe_seu_peso">Acompanhe seu peso</string>
     <string name="dashboard_ver_historico">Ver histórico</string>
     <string name="dashboard_reveja_conquistas">Reveja suas conquistas</string>
+
+    <string name="cadastro_trocar_foto">Trocar foto</string>
+    <string name="cadastro_dados_autenticacao">Dados para autenticacao</string>
+    <string name="cadastro_email">E-mail</string>
+    <string name="cadastro_senha">Senha</string>
+    <string name="cadastro_dados_pessoais">Dados Pessoais</string>
+    <string name="cadastro_nome">Nome</string>
+    <string name="cadastro_profissao">Profissão</string>
+    <string name="cadastro_altura">Altura</string>
+    <string name="cadastro_data_nasc">Data de Nascimento</string>
+    <string name="cadastro_sexo">Sexo</string>
+    <string name="cadastro_masculino">Masculino</string>
+    <string name="cadastro_feminino">Feminino</string>
 </resources>
