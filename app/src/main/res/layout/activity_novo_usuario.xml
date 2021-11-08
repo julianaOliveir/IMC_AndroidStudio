@@ -155,9 +155,11 @@
 
                 <EditText
                     android:id="@+id/edit_data_nasc"
-                    android:inputType="date"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="50dp"
+                    android:paddingStart="12dp"
+                    android:inputType="date"
+                    android:focusable="false" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
