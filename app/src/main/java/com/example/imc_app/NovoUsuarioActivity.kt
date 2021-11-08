@@ -8,6 +8,7 @@ import android.util.Log
 import android.app.DatePickerDialog
 import android.widget.EditText
 import android.widget.RadioButton
+import android.widget.Toast
 import java.util.*
 
 class NovoUsuarioActivity : AppCompatActivity() {
@@ -82,7 +83,24 @@ class NovoUsuarioActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         if(validarCampos()){
-            //gravar os dados
+            //gravar os dados no SharedPreferences
+            // Criando um arquivo xml chamado "usuario"
+            // Se o arquivo já existir ele vai somente abrir
+            val arquivo = getSharedPreferences("usuario", MODE_PRIVATE)
+            val editor = arquivo.edit()
+
+            editor.putString("email", editEmail.text.toString())
+            editor.putString("senha", editSenha.text.toString())
+            editor.putString("nome", editNome.text.toString())
+            editor.putString("profissao", editProfissao.text.toString())
+            editor.putFloat("altura", editAltura.text.toString().toFloat())
+            editor.putString("nascimento", editDataNascimento.text.toString())
+            editor.putString("sexo", if(RadioMasculino.isChecked) "M" else "F")
+            editor.apply()
+
+            Toast.makeText(this, "Usuário cadastrado com sucesso!", Toast.LENGTH_SHORT).show()
+            finish()
+
         }else{
             //gravo nada
         }
@@ -108,9 +126,18 @@ class NovoUsuarioActivity : AppCompatActivity() {
             valido = false
         }
 
-        if(editProfissao.text.isEmpty()){
-            editProfissao.error = "Campo profissão obrigatório!"
+        if(editAltura.text.isEmpty()){
+            editAltura.error = "Campo altura obrigatório!"
             valido = false
+        }
+
+        if(editDataNascimento.text.isEmpty()){
+            editDataNascimento.error = "Campo Data de Nascimento obrigatório!"
+            valido = false
+        }
+
+        if(!RadioFeminino.isChecked && !RadioMasculino.isChecked){
+
         }
 
         return valido
