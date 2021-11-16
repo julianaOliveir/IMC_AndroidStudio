@@ -6,6 +6,9 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.imc_app.utils.calcularIdade
+import java.time.LocalDate
+import java.time.Period
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +24,8 @@ class MainActivity : AppCompatActivity() {
         val editSenha = findViewById<EditText>(R.id.edit_login_senha)
 
         buttonEntrar.setOnClickListener {
+
+           calcularIdade("19/06/2003")
 
             val arquivo = getSharedPreferences("usuario", MODE_PRIVATE)
 
